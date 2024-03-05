@@ -8,22 +8,41 @@
     <title>Sign Up Form</title>
 </head>
 <body>
-    <h1>Climber's Corner</h1>
-    <form action="">
-        <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="first-name" placeholder="John">
-        <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" name="last-name" placeholder="Smith">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="johnsmith@gmail.com">
-        <label for="tel">Telephone Number:</label>
-        <input type="tel" id="tel" name="tel" placeholder="07123456789">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password">
-        <label for="password-confirm">Confirm Password:</label>
-        <input type="password" id="password-confirm" name="password-confirm">
-    </form>
-    <button type="submit">Submit Form</button>
-    <p>Already have an account? <a href="">Sign in.</a></p>
+    <div class="container">
+        <div class="banner">
+            <svg width="96" height="96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden">
+                <g transform="translate(-592 -312)">
+                    <path fill="white" d="M683.7 384.8 663.7 352.8C663.3 352.2 662.7 351.9 662 351.9 661.3 351.9 660.7 352.3 660.3 352.8L654.4 362.2 667 382.6C668.1 384.2 668.3 386.2 667.6 388L681.8 388C682.6 388 683.3 387.6 683.7 386.9 684.1 386.2 684.1 385.4 683.7 384.8L683.7 384.8Z"/>
+                    <path fill="white" d="M635.1 355.1 630 359.7 624.9 355.2 615.3 361 630 337 644.7 361 635.1 355.1ZM663.6 384.8 631.7 332.9C631.3 332.4 630.7 332 630 332 629.3 332 628.7 332.3 628.3 332.9L596.4 384.8C595.9 385.4 595.9 386.3 596.2 387 596.6 387.6 597.3 388 598.1 388L661.9 388C662.7 388 663.4 387.6 663.8 386.9 664.1 386.2 664.1 385.4 663.6 384.8Z"/>
+                </g>
+            </svg>
+            <h1>Climber's Corner</h1>
+        </div>
+        <div class="content">
+            <p><strong>This is not a real online service! </strong></p>
+                <p>Record and share climbs, photos, locations, and notes. Sign up <em>now</em> to get started!</p>
+            <h2>Signup Form</h2>
+                <form action="">
+                <div class="col1">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="John">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="johnsmith@gmail.com">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="col2">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Smith">
+                    <label for="tel">Telephone Number:</label>
+                    <input type="tel" id="tel" name="tel" placeholder="07123456789">
+                    <label for="password-confirm">Confirm Password:</label>
+                    <input type="password" id="password-confirm" name="password-confirm">
+                </div>
+            </form>
+            <button type="submit">Submit Form</button>
+            <p>Already have an account? <a href="">Sign in.</a></p>
+        </div>
+    </div>
 </body>
 </html>

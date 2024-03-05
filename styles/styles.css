@@ -1,8 +1,64 @@
 :root {
     background-image: url(../imgs/climb.jpg);
+    background-size: 100vw;
+    background-position-x: -40vw;
+    background-repeat: repeat-x;
     font-family: 'ArchitectsDaughterRegular', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.banner {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex: 2;
+    height: min-content;
+    justify-content: center;
+}
+
+.logo {
+    fill: white;
+}
+
+h1 {
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    background-color: antiquewhite;
+    min-height: 100vh;
+    align-items: center;
+    padding: 50px;
+}
+
+h2, p {
+    margin : 0px;
 }
 
 form {
-    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+input, label {
+    display: block;
+    margin: 10px; 
+}
+
+button {
+    background-color: navy;
+    color: white;
+    border: grey, 2px;
+    border-radius: 4px;
+    width: max-content;
+    padding: 5px 10px;
+    margin-bottom: 10px; 
 }

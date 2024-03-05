@@ -12,6 +12,8 @@
     align-items: center;
 }
 
+/* Left Hand Side */
+
 .banner {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -28,29 +30,48 @@ h1 {
     color: white;
 }
 
+/* Right Hand Side */
+
 .content {
     display: flex;
     flex-direction: column;
     flex: 3;
     background-color: antiquewhite;
-    min-height: 100vh;
+    min-height: 80vh;
     align-items: center;
     padding: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+}
+
+.form-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.col1,
+.col2 {
+    margin: 0px 30px;
 }
 
 h2, p {
     margin : 0px;
 }
 
-form {
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
-}
-
 input, label {
     display: block;
-    margin: 10px; 
+    margin: 6px; 
+}
+
+input {
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 4px;
 }
 
 button {
@@ -60,5 +81,20 @@ button {
     border-radius: 4px;
     width: max-content;
     padding: 5px 10px;
-    margin-bottom: 10px; 
+    margin: 20px 0px; 
+}
+
+/* Form Pseudo Classes */
+
+input:focus,
+button:focus {
+    outline: none; /* remove default black outline */
+    border-color: blue;
+    box-shadow: 1px 1px 1px 1px aqua;
+}
+
+input:hover,
+button:hover {
+    border-color: navy;
+    box-shadow: 1px 1px 1px 1px navy;
 }
